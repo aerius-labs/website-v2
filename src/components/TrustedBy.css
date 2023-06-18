@@ -1,0 +1,14 @@
+.container1 {
+  background-image: url(../asserts/img/Background-image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0, 50% 0, 100% 0;
+  background-color: rgba(105, 109, 113, 0.9);
+  background-blend-mode: multiply;
+}
+@media (max-width: 768px) {
+  .container1 {
+    background-size: cover;
+    background-position: center;
+  }
+}

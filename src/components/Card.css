@@ -1,0 +1,51 @@
+.cardContainer {
+  width: 30%;
+}
+
+.cardImageContainer {
+  width: 20vw;
+  height: 30vh;
+  border: 1px solid #cf447f;
+  align-content: center;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardImage {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
+
+.cardName {
+  text-align: center;
+  border-radius: 20px;
+  font-family: "Conthrax";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 25px;
+  letter-spacing: 0.2em;
+  color: #cf447f;
+  margin-top: 4%;
+}
+
+.cardDescription {
+  text-align: left;
+  border-radius: 20px;
+  font-family: "Unispace";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  margin-top: 4%;
+}
+
+@media (max-height: 600px) {
+  .cardContainer {
+    width: 100%;
+  }
+}

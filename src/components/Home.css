@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+@font-face {
+  font-family: 'Conthrax';
+  src: url('../asserts/fonts/conthrax-sb.otf');
+}
+
+@font-face {
+  font-family: 'Unispace';
+  src: url('../asserts/fonts/unispace.otf');
+}
+
+.navbar-items {
+  font-family: 'Unispace';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6vh;
+  color: #8d8d8d;
+  text-transform: capitalize;
+  margin-left: 5%;
+}
+
+/* .container {
+  background-image: url(../asserts/img/left-right.jpg),
+    url(../asserts//img/background.jpg), url(../asserts/img/left-right.jpg);
+  background-size: contain, contain, contain;
+  background-repeat: no-repeat;
+  background-position: 0px 0px, 50% 0px, 100% 0px, 100% 0px;
+  background-color: "black";
+  background-blend-mode: overlay;
+  
+} */
+
+/* background-color: rgba(77, 82, 86, 0.9);
+  background-blend-mode: multiply; */
+
+.container {
+  background-image: url(../asserts/img/Background-image.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0 0, 50% 0, 100% 0;
+  background-color: rgba(105, 109, 113, 0.9);
+  background-blend-mode: multiply;
+}
