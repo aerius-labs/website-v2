@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/website-v2/static/css/main.4f7d0147.css",
+    "main.js": "/website-v2/static/js/main.52990078.js",
+    "static/js/787.71e672d5.chunk.js": "/website-v2/static/js/787.71e672d5.chunk.js",
+    "static/media/img 3.png": "/website-v2/static/media/img 3.6b3da12444a3f6ead360.png",
+    "static/media/Background-image.jpg": "/website-v2/static/media/Background-image.6a38874d2bb949f9f741.jpg",
+    "static/media/conthrax-sb.otf": "/website-v2/static/media/conthrax-sb.787c73c4164cc642bfd1.otf",
+    "static/media/man.png": "/website-v2/static/media/man.db926228733339edb95d.png",
+    "static/media/unispace.otf": "/website-v2/static/media/unispace.b3e9de06d2c866a3654c.otf",
+    "static/media/top_left.png": "/website-v2/static/media/top_left.3afcd4e2aaf706057990.png",
+    "static/media/right.png": "/website-v2/static/media/right.e123a0778a4d5096c9b5.png",
+    "static/media/about_planet.png": "/website-v2/static/media/about_planet.b5ce6d85eac964fa467c.png",
+    "static/media/services_img.png": "/website-v2/static/media/services_img.7e3d8f51dbcfd0187fdd.png",
+    "static/media/trusted_by_planet.png": "/website-v2/static/media/trusted_by_planet.48d87398f43cda4628dc.png",
+    "static/media/services3.png": "/website-v2/static/media/services3.44b5f4ca6d549798f0d0.png",
+    "static/media/services2.png": "/website-v2/static/media/services2.0c25b1dbf0165ddcc26e.png",
+    "static/media/services1.png": "/website-v2/static/media/services1.7df91f65e14499b58cfe.png",
+    "static/media/anthena_finance.png": "/website-v2/static/media/anthena_finance.ca3e892c5f20e4c363c7.png",
+    "static/media/smallplanet.png": "/website-v2/static/media/smallplanet.36598e38421585bb254d.png",
+    "static/media/zk-snap.svg": "/website-v2/static/media/zk-snap.4fc387d8a3e0a32b3fed.svg",
+    "static/media/logo.svg": "/website-v2/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/website-v2/index.html",
+    "main.4f7d0147.css.map": "/website-v2/static/css/main.4f7d0147.css.map",
+    "main.52990078.js.map": "/website-v2/static/js/main.52990078.js.map",
+    "787.71e672d5.chunk.js.map": "/website-v2/static/js/787.71e672d5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4f7d0147.css",
+    "static/js/main.52990078.js"
+  ]
+}
