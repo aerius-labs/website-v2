@@ -50,21 +50,14 @@ const Products = () => {
               width: "100%",
               marginTop: "15%",
               marginBottom: "8%",
+              zIndex: 1,
             }}
           >
             PRODUCTS
           </div>
         </div>
 
-        <div
-          style={{
-            width: "70%",
-            height: "auto",
-            display: "flex",
-            justifyContent: "center",
-            margin: "auto",
-          }}
-        >
+        <div className="product-data">
           {product_data.map((i, index) => (
             <>
               <ProductsCard {...i} />

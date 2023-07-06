@@ -1,14 +1,104 @@
-.container1 {
-  background-image: url(../asserts/img/Background-image.jpg);
+/* .container1 {
+  background-image: url(../asserts/img/website_bg_1.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 0, 50% 0, 100% 0;
-  background-color: rgba(105, 109, 113, 0.9);
+   background-color: rgba(105, 109, 113, 0.9); 
   background-blend-mode: multiply;
+} */
+
+.trusted_by_box {
+  width: 70%;
+  height: auto;
+  border: 1px solid #cf447f;
+  text-align: left;
+  border-radius: 20px;
+  font-family: Unispace;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  padding: 5%;
+  margin: auto 10%;
+  z-index: 1;
+  line-height: 25px;
 }
-@media (max-width: 768px) {
+
+.trusted-planet {
+  width: 15vw;
+  height: 10vw;
+  z-index: 1;
+}
+.increaseSize {
+  display: flex;
+  height: 17vh;
+  text-align: center;
+  z-index: 1;
+}
+
+.trusted-by {
+  font-family: Conthrax;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: 0.2em;
+  color: #cf447f;
+  width: 100%;
+  margin-right: 13%;
+  height: 10vw;
+  z-index: 1;
+}
+.mobile-heading {
+  display: none;
+}
+.trusted-box {
+  position: relative;
+  color: white;
+  z-index: 1;
+}
+
+/* 
+@media (min-width: 768px) {
   .container1 {
     background-size: cover;
     background-position: center;
   }
 }
+
+@media (max-width: 800px) {
+  .increaseSize {
+    height: 3vh;
+    text-align: right;
+  }
+  .trusted-by-box {
+    border: none;
+    font-size: 15px;
+    width: 40%;
+    text-align: right;
+  }
+  .trusted-planet {
+    display: none;
+  }
+  .trusted-box {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .trusted-by {
+    display: none;
+  }
+  .mobile-heading {
+    display: block;
+    font-family: Conthrax;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: 0.2em;
+    color: #cf447f;
+    width: 100%;
+    margin-right: 13%;
+    height: auto;
+  }
+} */

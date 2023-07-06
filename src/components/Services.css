@@ -1,15 +1,29 @@
-.container4 {
-  background-image: url(../asserts/img/Background-image.jpg);
+/* .container4 {
+  background-image: url(../asserts/img/website_bg_1.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 0, 50% 0, 100% 0;
-  background-color: rgba(105, 109, 113, 0.9);
+   background-color: rgba(105, 109, 113, 0.9); 
   background-blend-mode: multiply;
-}
+} */
 
+.services-data {
+  width: 80%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  z-index: 1;
+}
 @media (max-width: 768px) {
   .container4 {
     background-size: cover;
     background-position: center;
+  }
+}
+
+@media (max-width: 1150px) {
+  .services-data {
+    flex-direction: column;
   }
 }

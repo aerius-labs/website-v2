@@ -32,6 +32,7 @@ const Career = () => {
               width: "100%",
               marginTop: "15%",
               marginBottom: "8%",
+              zIndex: 1,
             }}
           >
             CAREERS
@@ -60,6 +61,7 @@ const Career = () => {
             paddingLeft: "5%",
             paddingTop: "1%",
             paddingBottom: "2%",
+            zIndex: 1,
           }}
         >
           We are always looking to add talented individuals to our team. Please

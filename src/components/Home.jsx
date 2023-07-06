@@ -9,6 +9,8 @@ import "./Home.css";
 import top_left from "../asserts/img/top_left.png";
 import right from "../asserts/img/right.png";
 import smallPlanet from "../asserts/img/smallplanet.png";
+import IconButton from "@mui/material/IconButton";
+import MenuIcon from "@mui/icons-material/Menu";
 
 const navItems = [
   {
@@ -34,77 +36,102 @@ const navItems = [
 ];
 
 export const Home = () => {
+  const [mobileOpen, setMobileOpen] = React.useState(false);
+
+  const handleDrawerToggle = () => {
+    setMobileOpen((prevState) => !prevState);
+  };
   return (
-    <div className="container" style={{ height: "100%", width: "100%" }}>
-      <div>
-        <Box sx={{ flexGrow: 1 }}>
-          <AppBar
-            position="static"
-            sx={{
-              backgroundColor: "transparent",
-              backdropFilter: "blur(10px)",
+    <>
+      <Box sx={{ flexGrow: 1 }}>
+        <AppBar
+          position="static"
+          sx={{
+            backgroundColor: "transparent",
+            backdropFilter: "blur(10px)",
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "space-between",
+            height: "12vh",
+            alignItems: "center",
+            borderBottom: "1px solid #CF447F",
+            position: "fixed",
+            top: "0",
+            width: "100%",
+            zIndex: 2,
+            paddingRight: "7%",
+            paddingLeft: "7%",
+          }}
+        >
+          <div
+            style={{
               display: "flex",
               flexDirection: "row",
-              justifyContent: "center",
-              height: "12vh",
+              width: "auto",
               alignItems: "center",
-              borderBottom: "1px solid #CF447F",
-              position: "fixed",
-              top: "0",
-              width: "100%",
             }}
           >
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                width: "30%",
-                alignItems: "center",
-              }}
-            >
-              <div>
-                <img src={logo}></img>
-              </div>
+            <div>
+              <img src={logo} className="logo"></img>
+            </div>
 
-              <Typography
-                variant="h6"
-                component="div"
-                sx={{ flexGrow: 1, fontFamily: "Conthrax", color: "#CF447F" }}
-              >
-                Aerius Labs
-              </Typography>
-            </div>
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                width: "50%",
-                justifyContent: "flex-end",
+            <Typography
+              variant="h6"
+              component="div"
+              sx={{
+                flexGrow: 1,
+                fontFamily: "Conthrax",
+                color: "#CF447F",
+                display: { xs: "none", sm: "block", lg: "block" },
               }}
             >
-              {navItems.map((i) => (
-                <Button
-                  color="inherit"
-                  key={navItems.indexOf(i.navBarText)}
-                  className="navbar-items"
-                  sx={{
-                    fontFamily: "Unispace",
-                    fontStyle: "normal",
-                    fontWeight: "700",
-                    fontSize: "2vh",
-                    color: "#8d8d8d",
-                    textTransform: "capitalize",
-                    marginLeft: "5%",
-                  }}
-                  href={i.path}
-                >
-                  {i.navBarText}
-                </Button>
-              ))}
-            </div>
-          </AppBar>
-        </Box>
-      </div>
+              Aerius Labs
+            </Typography>
+          </div>
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "row",
+              width: "55%",
+              justifyContent: "flex-end",
+              display: { xs: "none", sm: "none", lg: "block" },
+            }}
+          >
+            {navItems.map((i) => (
+              <Button
+                color="inherit"
+                key={navItems.indexOf(i.navBarText)}
+                className="navbar-items"
+                sx={{
+                  fontFamily: "Unispace",
+                  fontStyle: "normal",
+                  fontWeight: "700",
+                  fontSize: "1.3vw",
+                  color: "#8d8d8d",
+                  textTransform: "capitalize",
+                  marginRight: "5%",
+                }}
+                href={i.path}
+              >
+                {i.navBarText}
+              </Button>
+            ))}
+          </Box>
+          <IconButton
+            color="inherit"
+            aria-label="open drawer"
+            edge="start"
+            onClick={handleDrawerToggle}
+            sx={{
+              mr: 2,
+              display: { sm: "block", lg: "none", color: "#8d8d8d" },
+            }}
+          >
+            <MenuIcon />
+          </IconButton>
+        </AppBar>
+      </Box>
+
       <div
         style={{
           height: "100vh",
@@ -118,15 +145,8 @@ export const Home = () => {
             marginTop: "12vh",
           }}
         >
-          <img src={top_left} style={{ width: "12%", height: "12%" }} />
-          <img
-            src={right}
-            style={{
-              width: "15%",
-              height: "15%",
-              marginRight: "35%",
-            }}
-          />
+          <img src={top_left} className="left-top-planet" />
+          <img src={right} className="right-planet" />
         </div>
         <div
           style={{
@@ -137,36 +157,14 @@ export const Home = () => {
             marginTop: "10vh",
           }}
         >
-          <div style={{ width: "60%", marginLeft: "15vw" }}>
-            <div
-              style={{
-                fontFamily: "Conthrax",
-
-                color: "#F1227A",
-                height: "10vh",
-                fontWeight: "600",
-                fontSize: "8vh",
-                letterSpacing: "0.5vw",
-              }}
-            >
-              ZERO UNSEEN
-            </div>
-            <div
-              style={{
-                marginTop: "2vh",
-                fontFamily: "Conthrax",
-                color: "white",
-                fontWeight: "600",
-                fontSize: "3.5vh",
-                letterSpacing: "0.4vw",
-                wordSpacing: "1.5vw",
-              }}
-            >
+          <div className="head">
+            <div className="home-heading">ZERO UNSEEN</div>
+            <div className="home-description">
               Pioneering Invisible
               <br /> Integrity with <br />
               Zero Knowledge Proofs
             </div>
-            <img src={smallPlanet} style={{ marginLeft: "12%" }} />
+            <img src={smallPlanet} className="small-planet" />
           </div>
           <div
             style={{
@@ -181,16 +179,16 @@ export const Home = () => {
             <img
               src={man}
               style={{
-                height: "70vh",
-                marginTop: "5vh",
+                height: "35vw",
                 position: "absolute",
-                zIndex: "1",
+                zIndex: "0",
               }}
+              className="man hidden-on-lg"
             />
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

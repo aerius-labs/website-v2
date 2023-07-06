@@ -3,15 +3,7 @@ import "./Card.css";
 
 const Card = (props) => {
   return (
-    <div
-      className="cardContainer"
-      style={{
-        width: "100%",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-      }}
-    >
+    <div className="cardContainer">
       <div className="cardImageContainer">
         <img
           src={require(`../asserts/img/${props.image}`)}

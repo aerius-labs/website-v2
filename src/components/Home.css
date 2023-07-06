@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
 
 @font-face {
-  font-family: 'Conthrax';
-  src: url('../asserts/fonts/conthrax-sb.otf');
+  font-family: "Conthrax";
+  src: url("../asserts/fonts/conthrax-sb.otf");
 }
 
 @font-face {
-  font-family: 'Unispace';
-  src: url('../asserts/fonts/unispace.otf');
+  font-family: "Unispace";
+  src: url("../asserts/fonts/unispace.otf");
 }
 
 .navbar-items {
-  font-family: 'Unispace';
+  font-family: "Unispace";
   font-style: normal;
   font-weight: 700;
   font-size: 1.6vh;
@@ -34,11 +34,92 @@
 /* background-color: rgba(77, 82, 86, 0.9);
   background-blend-mode: multiply; */
 
-.container {
-  background-image: url(../asserts/img/Background-image.jpg);
+/* .container {
+  background-image: url(../asserts/img/website_bg_1.png);
   background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: 0 0, 50% 0, 100% 0;
-  background-color: rgba(105, 109, 113, 0.9);
+background-color: rgba(105, 109, 113, 0.9); 
   background-blend-mode: multiply;
+  z-index: 10;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+} */
+.left-top-planet {
+  width: 20vh;
+  height: 20vh;
+  z-index: 1;
+}
+.right-planet {
+  width: 17vh;
+  height: 15vh;
+  margin-right: 35%;
+  z-index: 1;
+}
+.head {
+  width: 60%;
+  height: 20vh;
+  margin-left: 15vw;
+  z-index: 1;
+}
+.home-heading {
+  font-family: Conthrax;
+  color: #f1227a;
+  height: auto;
+  font-weight: 600;
+  font-size: 7vh;
+  letter-spacing: 0.5vw;
+}
+
+.home-description {
+  margin-top: 2vh;
+  font-family: Conthrax;
+  color: white;
+  font-weight: 600;
+  font-size: 4vh;
+  letter-spacing: 0.4vw;
+  word-spacing: 1.5vw;
+}
+
+.small-planet {
+  margin-left: 12%;
+  height: 10vh;
+  z-index: 1;
+}
+
+@media (max-width: 1950px) {
+  .container {
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    width: 60px !important;
+  }
+}
+
+@media (max-width: 1150px) {
+  .container {
+    height: 60vh;
+  }
+  .hidden-on-lg {
+    display: none;
+  }
+  .left-top-planet {
+    width: 120px !important;
+    height: 120px !important;
+  }
+  .home-heading {
+    font-size: 3vh;
+  }
+  .home-description {
+    font-size: 1vh;
+  }
+  .right-planet {
+    display: none;
+  }
+  .small-planet {
+    display: none;
+  }
 }

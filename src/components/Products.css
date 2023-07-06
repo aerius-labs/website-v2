@@ -1,8 +1,30 @@
-.container3 {
-  background-image: url(../asserts/img/Background-image.jpg);
+/* .container3 {
+  background-image: url(../asserts/img/website_bg_1.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 0, 50% 0, 100% 0;
-  background-color: rgba(54, 56, 58, 0.9);
+ background-color: rgba(54, 56, 58, 0.9); 
   background-blend-mode: multiply;
+} */
+
+.product-data {
+  width: 70%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .container3 {
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (max-width: 1000px) {
+  .product-data {
+    flex-direction: column;
+  }
 }

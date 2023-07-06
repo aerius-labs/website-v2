@@ -7,10 +7,12 @@ import Products from "./components/Products";
 import Services from "./components/Services";
 import Career from "./components/Career";
 import Footer from "./components/Footer";
+import Background from "./components/Background";
 
 function App() {
   return (
     <div className="App" style={{ width: "100%", overflow: "hidden" }}>
+      <Background />
       <Home />
       <TrustedBy />
       <About />

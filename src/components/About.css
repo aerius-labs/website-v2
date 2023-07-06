@@ -1,8 +1,43 @@
-.container2 {
-  background-image: url(../asserts/img/Background-image.jpg);
+/* .container2 {
+  background-image: url(../asserts/img/website_bg_1.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 0, 50% 0, 100% 0;
-  background-color: rgba(54, 56, 58, 0.9);
   background-blend-mode: multiply;
+  height: "auto";
+} */
+
+.about {
+  font-family: Conthrax;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: 0.2em;
+  color: #cf447f;
+  width: 100%;
+  margin-left: 13%;
+  margin-top: 15%;
+  height: 10vw;
+  z-index: 1;
+}
+
+.about-con {
+  display: flex;
+  height: 23vw;
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .container2 {
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .about-con {
+    height: 40vw;
+  }
 }

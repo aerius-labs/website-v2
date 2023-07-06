@@ -58,25 +58,18 @@ const Services = () => {
               marginTop: "15%",
               marginLeft: "15%",
               marginBottom: "8%",
+              zIndex: 1,
             }}
           >
             SERVICES
           </div>
           <img
             src={services_planet}
-            style={{ width: "15%", height: "15%", marginTop: "15%" }}
+            style={{ width: "15%", height: "15%", marginTop: "15%", zIndex: 1 }}
           />
         </div>
 
-        <div
-          style={{
-            width: "80%",
-            height: "auto",
-            display: "flex",
-            justifyContent: "center",
-            margin: "auto",
-          }}
-        >
+        <div className="services-data">
           {services_data.map((i, index) => (
             <>
               <ServicesCard {...i} />

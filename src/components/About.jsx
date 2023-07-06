@@ -6,34 +6,16 @@ const About = () => {
   return (
     <div className="container2" id="about">
       <div>
-        <div
-          style={{
-            display: "flex",
-            height: "45vh",
-            marginBottom: "2%",
-            textAlign: "center",
-          }}
-        >
-          <div
-            style={{
-              fontFamily: "Conthrax",
-              fontStyle: "normal",
-              fontWeight: "600",
-              fontSize: "36px",
-              lineHeight: "43px",
-              letterSpacing: "0.2em",
-              color: "#CF447F",
-              width: "100%",
-              marginLeft: "10%",
-              marginTop: "15%",
-              marginBottom: "8%",
-            }}
-          >
-            ABOUT US
-          </div>
+        <div className="about-con">
+          <div className="about">ABOUT US</div>
           <img
             src={planet}
-            style={{ width: "15%", height: "35%", marginTop: "15%" }}
+            style={{
+              width: "15vw",
+              height: "10vw",
+              marginTop: "15%",
+              zIndex: 1,
+            }}
           />
         </div>
         <div
@@ -45,13 +27,15 @@ const About = () => {
             borderRadius: "20px",
             fontFamily: "Unispace",
             fontStyle: "normal",
-            fontWeight: "400",
+            fontWeight: "700",
             fontSize: "16px",
-            lineHeight: "30px",
             letterSpacing: "0.2em",
             color: "#FFFFFF",
             padding: "5%",
-            margin: "0% 10%",
+            margin: "auto 10%",
+            zIndex: 1,
+            position: "relative",
+            lineHeight: "25px",
           }}
         >
           Aerius Labs is where cryptography, blockchain, and zero-knowledge
