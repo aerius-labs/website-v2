@@ -1,12 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.b1c1d743.css",
-    "main.js": "/static/js/main.ee1f2b03.js",
+    "main.css": "/static/css/main.aa3c2f43.css",
+    "main.js": "/static/js/main.814e733a.js",
     "static/js/787.71e672d5.chunk.js": "/static/js/787.71e672d5.chunk.js",
+    "static/media/website_bg_1.png": "/static/media/website_bg_1.e26b749a0e2d72c7df6b.png",
     "static/media/img 3.png": "/static/media/img 3.6b3da12444a3f6ead360.png",
     "static/media/Background-image.jpg": "/static/media/Background-image.6a38874d2bb949f9f741.jpg",
     "static/media/conthrax-sb.otf": "/static/media/conthrax-sb.787c73c4164cc642bfd1.otf",
     "static/media/man.png": "/static/media/man.db926228733339edb95d.png",
+    "static/media/yellow-circle-black-background.png": "/static/media/yellow-circle-black-background.77b047aeecc339b2ce43.png",
+    "static/media/white-circle.png": "/static/media/white-circle.6fdc41d43aba9240af04.png",
     "static/media/unispace.otf": "/static/media/unispace.b3e9de06d2c866a3654c.otf",
     "static/media/top_left.png": "/static/media/top_left.3afcd4e2aaf706057990.png",
     "static/media/right.png": "/static/media/right.e123a0778a4d5096c9b5.png",
@@ -21,12 +24,12 @@
     "static/media/zk-snap.svg": "/static/media/zk-snap.4fc387d8a3e0a32b3fed.svg",
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
-    "main.b1c1d743.css.map": "/static/css/main.b1c1d743.css.map",
-    "main.ee1f2b03.js.map": "/static/js/main.ee1f2b03.js.map",
+    "main.aa3c2f43.css.map": "/static/css/main.aa3c2f43.css.map",
+    "main.814e733a.js.map": "/static/js/main.814e733a.js.map",
     "787.71e672d5.chunk.js.map": "/static/js/787.71e672d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1c1d743.css",
-    "static/js/main.ee1f2b03.js"
+    "static/css/main.aa3c2f43.css",
+    "static/js/main.814e733a.js"
   ]
 }
