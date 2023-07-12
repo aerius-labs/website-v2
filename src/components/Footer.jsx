@@ -59,7 +59,7 @@ const Footer = () => {
           </a>
         </div>
         <hr style={{ width: "90%" }} />
-        <div style={{ color: "#999A9B" }}>© 2023 Aerius Labs, Ltd.</div>
+        <div style={{ color: "#999A9B" }}>© 2023 Aerius Technologies</div>
       </div>
     </div>
   );
