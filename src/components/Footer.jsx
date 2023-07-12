@@ -4,6 +4,7 @@ import mail from "../asserts/img/mail.png";
 import twitter from "../asserts/img/twitter.png";
 import github from "../asserts/img/github.png";
 import discord from "../asserts/img/discord.png";
+import "./Footer.css";
 
 const Footer = () => {
   return (
@@ -34,27 +35,27 @@ const Footer = () => {
         </div>
         <div style={{ height: "5vh", zIndex: 1 }}>
           <a href="#" target="_blank" rel="noopener noreferrer">
-            <img src={telegram} style={{ marginRight: "10%", height: "40%" }} />
+            <img src={telegram} className="image" />
           </a>
           <a href="#" target="_blank" rel="noopener noreferrer">
-            <img src={mail} style={{ marginRight: "10%", height: "40%" }} />
+            <img src={mail} className="image" />
           </a>
           <a
             href="https://github.com/Aerius-Labs"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={github} style={{ marginRight: "10%", height: "40%" }} />
+            <img src={github} className="image" />
           </a>
           <a href="#" target="_blank" rel="noopener noreferrer">
-            <img src={discord} style={{ marginRight: "10%", height: "40%" }} />
+            <img src={discord} className="image" />
           </a>
           <a
             href="https://twitter.com/AeriusLabs"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={twitter} style={{ height: "40%" }} />
+            <img src={twitter} style={{ height: "35px" }} />
           </a>
         </div>
         <hr style={{ width: "90%" }} />

@@ -11,6 +11,7 @@ import right from "../asserts/img/right.png";
 import smallPlanet from "../asserts/img/smallplanet.png";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
+import { SignalCellularNull } from "@mui/icons-material";
 
 const navItems = [
   {
@@ -112,6 +113,12 @@ export const Home = () => {
                   marginRight: "5%",
                 }}
                 href={i.path}
+                target={
+                  i.navBarText.toLowerCase() === "github" ||
+                  i.navBarText.toLowerCase() === "blog"
+                    ? "_blank"
+                    : null
+                }
               >
                 {i.navBarText}
               </Button>

@@ -1,5 +1,4 @@
 import React from "react";
-// import planet from "../asserts/img/about_planet.png";
 import "./Career.css";
 
 const Career = () => {
