@@ -34,10 +34,16 @@ const Footer = () => {
           CONNECT WITH US
         </div>
         <div style={{ height: "5vh", zIndex: 1 }}>
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          <a 
+            href="https://t.me/rahulghangas" 
+            target="_blank" 
+            rel="noopener noreferrer">
             <img src={telegram} className="image" />
           </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          <a 
+            href="rahul@aeriuslabs.org" 
+            target="_blank" 
+            rel="noopener noreferrer">
             <img src={mail} className="image" />
           </a>
           <a
@@ -46,9 +52,6 @@ const Footer = () => {
             rel="noopener noreferrer"
           >
             <img src={github} className="image" />
-          </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <img src={discord} className="image" />
           </a>
           <a
             href="https://twitter.com/AeriusLabs"
