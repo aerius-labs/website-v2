@@ -63,7 +63,7 @@ const Career = () => {
             zIndex: 1,
           }}
         >
-          We are always looking to add talented individuals to our team. Please
+          We are always looking to add talented individuals to our team.\nPlease
           stay tuned for any upcoming opportunities.
           <div
             style={{
