@@ -1,5 +1,5 @@
 import React from "react";
-import planet from "../asserts/img/trusted_by_planet.png";
+import planet from "../assets/img/trusted_by_planet.png";
 import "./TrustedBy.css";
 
 const TrustedBy = () => {

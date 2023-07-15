@@ -2,12 +2,12 @@
 
 @font-face {
   font-family: "Conthrax";
-  src: url("../asserts/fonts/conthrax-sb.otf");
+  src: url("../assets/fonts/conthrax-sb.otf");
 }
 
 @font-face {
   font-family: "Unispace";
-  src: url("../asserts/fonts/unispace.otf");
+  src: url("../assets/fonts/unispace.otf");
 }
 
 .navbar-items {
@@ -21,8 +21,8 @@
 }
 
 /* .container {
-  background-image: url(../asserts/img/left-right.jpg),
-    url(../asserts//img/background.jpg), url(../asserts/img/left-right.jpg);
+  background-image: url(../assets/img/left-right.jpg),
+    url(../assets//img/background.jpg), url(../assets/img/left-right.jpg);
   background-size: contain, contain, contain;
   background-repeat: no-repeat;
   background-position: 0px 0px, 50% 0px, 100% 0px, 100% 0px;
@@ -35,7 +35,7 @@
   background-blend-mode: multiply; */
 
 /* .container {
-  background-image: url(../asserts/img/website_bg_1.png);
+  background-image: url(../assets/img/website_bg_1.png);
   background-size: 100%;
 background-color: rgba(105, 109, 113, 0.9); 
   background-blend-mode: multiply;

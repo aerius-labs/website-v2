@@ -1,9 +1,9 @@
 import React from "react";
-import telegram from "../asserts/img/telegram.png";
-import mail from "../asserts/img/mail.png";
-import twitter from "../asserts/img/twitter.png";
-import github from "../asserts/img/github.png";
-import discord from "../asserts/img/discord.png";
+import telegram from "../assets/img/telegram.png";
+import mail from "../assets/img/mail.png";
+import twitter from "../assets/img/twitter.png";
+import github from "../assets/img/github.png";
+import discord from "../assets/img/discord.png";
 import "./Footer.css";
 
 const Footer = () => {

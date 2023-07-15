@@ -6,7 +6,7 @@ const Card = (props) => {
     <div className="cardContainer">
       <div className="cardImageContainer">
         <img
-          src={require(`../asserts/img/${props.image}`)}
+          src={require(`../assets/img/${props.image}`)}
           alt=""
           style={{
             width: "70%",

@@ -1,5 +1,5 @@
 import React from "react";
-// import planet from "../asserts/img/about_planet.png";
+// import planet from "../assets/img/about_planet.png";
 import "./Products.css";
 import ProductsCard from "./Card";
 

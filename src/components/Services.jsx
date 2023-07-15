@@ -1,8 +1,8 @@
 import React from "react";
-// import planet from "../asserts/img/about_planet.png";
+// import planet from "../assets/img/about_planet.png";
 import "./Services.css";
 import ServicesCard from "./Card";
-import services_planet from "../asserts/img/services_img.png";
+import services_planet from "../assets/img/services_img.png";
 
 const services_data = [
   {

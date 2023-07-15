@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
-import wc from "./../asserts/img/circle4.webp";
+import wc from "./../assets/img/circle4.webp";
 import "./Background.css";
 
 const Background = () => {
