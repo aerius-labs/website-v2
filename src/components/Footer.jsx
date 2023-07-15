@@ -41,7 +41,7 @@ const Footer = () => {
             <img src={telegram} className="image" />
           </a>
           <a 
-            href="rahul@aeriuslabs.org" 
+            href="mailto:rahul@aeriuslabs.org" 
             target="_blank" 
             rel="noopener noreferrer">
             <img src={mail} className="image" />
