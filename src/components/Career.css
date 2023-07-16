@@ -1,15 +1,57 @@
-/* .container4 {
-  background-image: url(../assets/img/website_bg_1.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0 0, 50% 0, 100% 0;
-  background-color: rgba(54, 56, 58, 0.9); 
-  background-blend-mode: multiply;
-} */
+.careers {
+  font-family: Conthrax;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: 0.2em;
+  color: #cf447f;
+  width: 100%;
+  margin-top: 15%;
+  margin-bottom: 8%;
+  z-index: 1;
+}
 
-@media (max-width: 768px) {
-  .container4 {
-    background-size: cover;
-    background-position: center;
+.careers-description {
+  width: 60%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  border: 1px solid #cf447f;
+  align-content: center;
+  border-radius: 20px;
+  font-family: Unispace;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  flex-direction: column;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-top: 1%;
+  padding-bottom: 2%;
+  z-index: 1;
+}
+
+.careers-description > Button {
+  width: 10vw;
+  background-color: #cf447f;
+  margin: auto;
+}
+@media (max-width: 800px) {
+  .careers-description {
+    margin-top: 2%;
+    font-size: 10px;
+  }
+  .container5 {
+    margin: 0vw 5vw 20vh 5vw;
+  }
+
+  .careers {
+    margin-bottom: 0px;
+    font-size: 25px;
   }
 }

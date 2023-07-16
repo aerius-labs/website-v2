@@ -11,37 +11,48 @@ import right from "../assets/img/right.png";
 import smallPlanet from "../assets/img/smallplanet.png";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
-import { SignalCellularNull } from "@mui/icons-material";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
 
 const navItems = [
   {
+    key: 1,
     navBarText: "About",
     path: "#about",
   },
   {
+    key: 2,
     navBarText: "Products",
     path: "#products",
   },
   {
+    key: 3,
     navBarText: "Services",
     path: "#services",
   },
   {
+    key: 4,
     navBarText: "Github",
     path: "https://github.com/Aerius-Labs",
   },
   {
+    key: 5,
     navBarText: "Blog",
     path: "https://blog.aeriuslabs.org/",
   },
 ];
 
 export const Home = () => {
-  const [mobileOpen, setMobileOpen] = React.useState(false);
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
 
-  const handleDrawerToggle = () => {
-    setMobileOpen((prevState) => !prevState);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
   };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
   return (
     <>
       <Box sx={{ flexGrow: 1 }}>
@@ -101,7 +112,7 @@ export const Home = () => {
             {navItems.map((i) => (
               <Button
                 color="inherit"
-                key={navItems.indexOf(i.navBarText)}
+                key={i.key}
                 className="navbar-items"
                 sx={{
                   fontFamily: "Unispace",
@@ -124,18 +135,72 @@ export const Home = () => {
               </Button>
             ))}
           </Box>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            edge="start"
-            onClick={handleDrawerToggle}
-            sx={{
-              mr: 2,
-              display: { sm: "block", lg: "none", color: "#8d8d8d" },
+          <Box sx={{ display: { xs: "block", sm: "block", lg: "none" } }}>
+            <Button
+              id="basic-button"
+              aria-controls={open ? "basic-menu" : undefined}
+              aria-haspopup="true"
+              aria-expanded={open ? "true" : undefined}
+              onClick={handleClick}
+            >
+              <IconButton
+                color="inherit"
+                aria-label="open drawer"
+                edge="start"
+                sx={{
+                  mr: 2,
+                  display: {
+                    sm: "block",
+                    lg: "none",
+                    color: "#8d8d8d",
+                    fontSize: "50px",
+                  },
+                }}
+              >
+                <MenuIcon />
+              </IconButton>
+            </Button>
+          </Box>
+
+          <Menu
+            id="demo-positioned-menu"
+            aria-labelledby="demo-positioned-button"
+            anchorEl={anchorEl}
+            open={open}
+            onClose={handleClose}
+            anchorOrigin={{
+              vertical: "top",
+              horizontal: "left",
+            }}
+            transformOrigin={{
+              vertical: "top",
+              horizontal: "left",
             }}
           >
-            <MenuIcon />
-          </IconButton>
+            {navItems.map((i) => (
+              <MenuItem
+                onClick={handleClose}
+                sx={{ width: "50vw", textAlign: "left" }}
+              >
+                <Button
+                  href={i.path}
+                  sx={{
+                    textDecoration: "none",
+                    color: "black",
+                    width: "100%",
+                  }}
+                  target={
+                    i.navBarText.toLowerCase() === "github" ||
+                    i.navBarText.toLowerCase() === "blog"
+                      ? "_blank"
+                      : null
+                  }
+                >
+                  {i.navBarText}
+                </Button>
+              </MenuItem>
+            ))}
+          </Menu>
         </AppBar>
       </Box>
 

@@ -2,3 +2,55 @@
   margin-right: 10%;
   height: 35px;
 }
+.container6 {
+  position: relative;
+  width: 100%;
+}
+
+.footer-content {
+  text-align: center;
+  background-color: black;
+  border-top: 1px solid #cf447f;
+  z-index: 1;
+}
+
+.footer {
+  font-family: Conthrax;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 43px;
+  letter-spacing: 0.2em;
+  color: #cf447f;
+  padding-bottom: 2%;
+}
+
+.copyright {
+  color: #999a9b;
+}
+
+.twitter {
+  height: 35px;
+}
+
+@media (max-width: 800px) {
+  .trusted-by-box {
+    font-size: 10px;
+  }
+
+  .footer {
+    font-size: 15px;
+  }
+
+  .image {
+    height: 15px;
+  }
+
+  .twitter {
+    height: 15px;
+  }
+
+  .copyright {
+    font-size: 8px;
+  }
+}

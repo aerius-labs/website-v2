@@ -3,8 +3,8 @@ import "./Card.css";
 
 const Card = (props) => {
   return (
-    <div className="cardContainer">
-      <div className="cardImageContainer">
+    <div className="card-container">
+      <div className="card-image-container">
         <img
           src={require(`../assets/img/${props.image}`)}
           alt=""
@@ -16,13 +16,8 @@ const Card = (props) => {
           }}
         />
       </div>
-      <div className="cardName">{props.name}</div>
-      <div
-        className="cardDescription"
-        style={{ fontSize: "10px", textAlign: "center", width: "77%" }}
-      >
-        {props.discription}
-      </div>
+      <div className="card-name">{props.name}</div>
+      <div className="card-description">{props.discription}</div>
     </div>
   );
 };

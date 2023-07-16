@@ -45,24 +45,7 @@ const Services = () => {
             textAlign: "center",
           }}
         >
-          <div
-            style={{
-              fontFamily: "Conthrax",
-              fontStyle: "normal",
-              fontWeight: "600",
-              fontSize: "36px",
-              lineHeight: "43px",
-              letterSpacing: "0.2em",
-              color: "#CF447F",
-              width: "100%",
-              marginTop: "15%",
-              marginLeft: "15%",
-              marginBottom: "8%",
-              zIndex: 1,
-            }}
-          >
-            SERVICES
-          </div>
+          <div className="services">SERVICES</div>
           <img
             src={services_planet}
             style={{ width: "15%", height: "15%", marginTop: "15%", zIndex: 1 }}

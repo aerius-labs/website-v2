@@ -13,7 +13,7 @@ const product_data = [
   {
     name: "Athena Finance",
     discription:
-      "On-chain asset asset management for the Cosmos ecosystem, based on CosmWasm",
+      "On-chain asset management for the Cosmos ecosystem, based on CosmWasm",
     descFontSize: "20px",
     image: "anthena_finance.png",
   },
@@ -38,23 +38,7 @@ const Products = () => {
             textAlign: "center",
           }}
         >
-          <div
-            style={{
-              fontFamily: "Conthrax",
-              fontStyle: "normal",
-              fontWeight: "600",
-              fontSize: "36px",
-              lineHeight: "43px",
-              letterSpacing: "0.2em",
-              color: "#CF447F",
-              width: "100%",
-              marginTop: "15%",
-              marginBottom: "8%",
-              zIndex: 1,
-            }}
-          >
-            PRODUCTS
-          </div>
+          <div className="products">PRODUCTS</div>
         </div>
 
         <div className="product-data">

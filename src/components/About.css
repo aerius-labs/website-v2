@@ -1,12 +1,3 @@
-/* .container2 {
-  background-image: url(../assets/img/website_bg_1.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0 0, 50% 0, 100% 0;
-  background-blend-mode: multiply;
-  height: "auto";
-} */
-
 .about {
   font-family: Conthrax;
   font-style: normal;
@@ -29,15 +20,34 @@
   text-align: center;
 }
 
-@media (max-width: 768px) {
-  .container2 {
-    background-size: cover;
-    background-position: center;
-  }
+.about-description {
+  width: 70%;
+  height: auto;
+  border: 1px solid #cf447f;
+  text-align: left;
+  border-radius: 20px;
+  font-family: Unispace;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  padding: 5%;
+  margin: auto 10%;
+  z-index: 1;
+  position: relative;
+  line-height: 25px;
 }
 
-@media (max-width: 450px) {
-  .about-con {
-    height: 40vw;
+@media (max-width: 800px) {
+  .about-description {
+    margin-top: 8vw;
+    font-size: 10px;
+  }
+  .container2 {
+    margin: 0vw 5vw 20vh 5vw;
+  }
+  .about {
+    font-size: 25px;
   }
 }

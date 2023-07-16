@@ -18,26 +18,7 @@ const About = () => {
             }}
           />
         </div>
-        <div
-          style={{
-            width: "70%",
-            height: "auto",
-            border: "1px solid #CF447F",
-            textAlign: "left",
-            borderRadius: "20px",
-            fontFamily: "Unispace",
-            fontStyle: "normal",
-            fontWeight: "700",
-            fontSize: "16px",
-            letterSpacing: "0.2em",
-            color: "#FFFFFF",
-            padding: "5%",
-            margin: "auto 10%",
-            zIndex: 1,
-            position: "relative",
-            lineHeight: "25px",
-          }}
-        >
+        <div className="about-description">
           Aerius Labs is where cryptography, blockchain, and zero-knowledge
           proofs (ZK) converge to shape the future of secure systems.
           <br />

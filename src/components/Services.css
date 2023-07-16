@@ -1,5 +1,5 @@
 /* .container4 {
-  background-image: url(../assets/img/website_bg_1.png);
+  background-image: url(../asserts/img/website_bg_1.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 0, 50% 0, 100% 0;
@@ -15,15 +15,36 @@
   margin: auto;
   z-index: 1;
 }
-@media (max-width: 768px) {
-  .container4 {
-    background-size: cover;
-    background-position: center;
-  }
+
+.services {
+  font-family: Conthrax;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: 0.2em;
+  color: #cf447f;
+  width: 100%;
+  margin-top: 15%;
+  margin-left: 15%;
+  margin-bottom: 8%;
+  z-index: 1;
 }
 
 @media (max-width: 1150px) {
   .services-data {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 800px) {
+  .container4 {
+    margin: 0vw 5vw 20vh 5vw;
+  }
+  .services {
+    font-size: 25px;
+  }
+  .services-data {
+    width: 70%;
   }
 }
