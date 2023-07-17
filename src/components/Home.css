@@ -10,6 +10,11 @@
   src: url("../assets/fonts/unispace.otf");
 }
 
+@font-face {
+  font-family: "CA Prologue W00 Heavy";
+  src: url("../assets/fonts/ca_prologue_heavy.otf");
+}
+
 .navbar-items {
   font-family: "Unispace";
   font-style: normal;

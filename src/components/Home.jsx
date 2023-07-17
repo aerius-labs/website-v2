@@ -161,47 +161,70 @@ export const Home = () => {
               </IconButton>
             </Button>
           </Box>
-
-          <Menu
-            id="demo-positioned-menu"
-            aria-labelledby="demo-positioned-button"
-            anchorEl={anchorEl}
-            open={open}
-            onClose={handleClose}
-            anchorOrigin={{
-              vertical: "top",
-              horizontal: "left",
-            }}
-            transformOrigin={{
-              vertical: "top",
-              horizontal: "left",
-            }}
-          >
-            {navItems.map((i) => (
-              <MenuItem
-                onClick={handleClose}
-                sx={{ width: "50vw", textAlign: "left" }}
-              >
-                <Button
-                  href={i.path}
-                  sx={{
-                    textDecoration: "none",
-                    color: "black",
-                    width: "100%",
-                  }}
-                  target={
-                    i.navBarText.toLowerCase() === "github" ||
-                    i.navBarText.toLowerCase() === "blog"
-                      ? "_blank"
-                      : null
-                  }
-                >
-                  {i.navBarText}
-                </Button>
-              </MenuItem>
-            ))}
-          </Menu>
         </AppBar>
+
+        <Menu
+          id="demo-positioned-menu"
+          aria-labelledby="demo-positioned-button"
+          anchorEl={anchorEl}
+          open={open}
+          onClose={handleClose}
+          anchorOrigin={{
+            vertical: "top",
+            horizontal: "left",
+          }}
+          transformOrigin={{
+            vertical: "top",
+            horizontal: "left",
+          }}
+          PaperProps={{
+            style: {
+              backgroundColor: "rgb(29,25,34, 0.4)", // Set black background with opacity 0.4
+              backdropFilter: "blur(10px)",
+              opacity: 0.8, // Set the opacity of the menu background
+              border: "1px solid #736E71",
+            },
+          }}
+        >
+          {navItems.map((i, idx) => (
+            <MenuItem
+              onClick={handleClose}
+              sx={{
+                width: "50vw",
+                textAlign: "left",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              <Button
+                href={i.path}
+                className="menu"
+                sx={{
+                  textDecoration: "none",
+                  color: "rgba(201, 199, 201, 1)", // Set white text color with full opacity
+                  width: "100%",
+                  display: "flex",
+                  justifyContent: "flex-start",
+                  opacity: "1",
+                  fontSize: "18px",
+                  fontFamily: "CA Prologue W00 Heavy",
+                  textTransform: "capitalize",
+                }}
+                target={
+                  i.navBarText.toLowerCase() === "github" ||
+                  i.navBarText.toLowerCase() === "blog"
+                    ? "_blank"
+                    : null
+                }
+              >
+                {i.navBarText}
+              </Button>
+              {idx != navItems.length - 1 ? (
+                <hr style={{ width: "95%", borderColor: "#736E71" }} />
+              ) : null}
+            </MenuItem>
+          ))}
+        </Menu>
       </Box>
 
       <div
