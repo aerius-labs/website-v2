@@ -15,7 +15,7 @@ const services_data = [
   {
     name: "Consulting",
     discription:
-      "We provide expert consulting by creating catered implementation for clients who want to integrate ZK or cryptography into their solutions, guiding organizations unlock the potential of secure digital solutions",
+      "We provide expert consulting by creating catered implementations for clients who want to integrate ZK or cryptography into their solutions, guiding organizations to unlock the potential of secure digital solutions",
     descFontSize: "16px",
     image: "services2.png",
   },
