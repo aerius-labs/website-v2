@@ -25,20 +25,25 @@ const Career = () => {
           <div className="careers-description">
             We are always looking to add talented individuals to our team.
             Please stay tuned for any upcoming opportunities.
-            {/* <div
-            style={{
-              width: "10%",
-              height: "5vh",
-              display: "flex",
-              justifyContent: "center",
-              margin: "auto",
-              border: "1px solid #CF447F",
-              alignContent: "center",
-              borderRadius: "20px",
-              marginTop: "2%",
-            }}
-          ></div> */}
-            {/* <Button>button</Button> */}
+            <Button
+              variant="outlined"
+              style={{
+                width: "fit-content",
+                margin: "auto",
+                marginTop: "20px",
+                border: "2px solid #cf447f",
+                transform: "translateY(5px)",
+                background: "linear-gradient(to bottom, #cf447f, purple)",
+                color: "white",
+                fontFamily: "Unispace",
+                transition: "background 0.3s ease",
+              }}
+              onClick={() => {
+                window.open("https://hallowed-crayfish-844.notion.site/Jobs-at-Aerius-9a9f7b75d06f437a895d0103ef9a3d8c", "_blank");
+              }}
+            >
+              Join Us
+            </Button>
           </div>
         </div>
       </div>
