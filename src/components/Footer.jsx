@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="footer">CONNECT WITH US</div>
         <div style={{ zIndex: 1 }}>
           <a 
-            href="https://t.me/rahulghangas" 
+            href="https://t.me/AeriusLabs" 
             target="_blank" 
             rel="noopener noreferrer"
           >
