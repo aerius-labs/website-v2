@@ -9,7 +9,7 @@ const product_data = [
     discription: "Off-chain ballot privacy for DAOs",
     descFontSize: "20px",
     image: "zk-snap.svg",
-    link:'https://drive.google.com/file/d/1Yb3VJ0AYGDhvTHNzE-hkv8-0gFjWkt8m/view',
+    link:'/whitepaper',
   },
   {
     name: "Athena Finance",
