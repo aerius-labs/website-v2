@@ -9,6 +9,7 @@ const product_data = [
     discription: "Off-chain ballot privacy for DAOs",
     descFontSize: "20px",
     image: "zk-snap.svg",
+    link:'https://drive.google.com/file/d/1Yb3VJ0AYGDhvTHNzE-hkv8-0gFjWkt8m/view',
   },
   {
     name: "Athena Finance",
@@ -16,6 +17,7 @@ const product_data = [
       "On-chain asset management for the Cosmos ecosystem, based on CosmWasm",
     descFontSize: "20px",
     image: "anthena_finance.png",
+    link:null,
   },
 ];
 
