@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a989fc01.css",
-    "main.js": "/static/js/main.a6905419.js",
+    "main.js": "/static/js/main.0550c60a.js",
     "static/js/787.71e672d5.chunk.js": "/static/js/787.71e672d5.chunk.js",
     "static/media/website_bg_1.png": "/static/media/website_bg_1.e26b749a0e2d72c7df6b.png",
     "static/media/img 3.png": "/static/media/img 3.6b3da12444a3f6ead360.png",
@@ -11,6 +11,7 @@
     "static/media/ca_prologue_heavy.otf": "/static/media/ca_prologue_heavy.b7ccfc03e5e43b9c7699.otf",
     "static/media/yellow-circle-black-background.png": "/static/media/yellow-circle-black-background.77b047aeecc339b2ce43.png",
     "static/media/white-circle.png": "/static/media/white-circle.6fdc41d43aba9240af04.png",
+    "static/media/lagrange-logo.png": "/static/media/lagrange-logo.6d495bda6d1a90a14583.png",
     "static/media/unispace.otf": "/static/media/unispace.b3e9de06d2c866a3654c.otf",
     "static/media/top_left.png": "/static/media/top_left.3afcd4e2aaf706057990.png",
     "static/media/right.png": "/static/media/right.e123a0778a4d5096c9b5.png",
@@ -28,11 +29,11 @@
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
     "main.a989fc01.css.map": "/static/css/main.a989fc01.css.map",
-    "main.a6905419.js.map": "/static/js/main.a6905419.js.map",
+    "main.0550c60a.js.map": "/static/js/main.0550c60a.js.map",
     "787.71e672d5.chunk.js.map": "/static/js/787.71e672d5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a989fc01.css",
-    "static/js/main.a6905419.js"
+    "static/js/main.0550c60a.js"
   ]
 }
