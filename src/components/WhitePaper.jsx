@@ -3,7 +3,7 @@ import { useEffect } from "react";
 
 export function WhitePaper() {
     useEffect(() => {
-        window.location.replace('https://drive.google.com/file/d/1Yb3VJ0AYGDhvTHNzE-hkv8-0gFjWkt8m/view', { replace: true });
+        window.location.replace('https://drive.google.com/file/d/1bu0oe9PVTtSuT8JpwMmzKEG8Fb-mdPLH/view', { replace: true });
     }, []);
   
     return <div>Redirecting...</div>;
